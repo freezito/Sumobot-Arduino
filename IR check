@@ -1,0 +1,16 @@
+int sensoruwu = A0;
+int lecturauwu = 0;
+
+void setup()
+{
+  Serial.begin(9600);
+  delay(100);
+}
+
+void loop()
+{
+  lecturauwu=digitalRead(sensoruwu);
+  Serial.println("Sensor de linea");
+  Serial.print(lecturauwu);
+  delay(50);
+}
